@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('app.congregation-list', [
+  angular.module('app.layout', [
     'app.core'
   ]);
 })();

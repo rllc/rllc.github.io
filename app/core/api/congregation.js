@@ -2,9 +2,10 @@
   'use strict';
 
   angular
-      .module('core.congregation')
+      .module('app.core')
       .factory('congregation', congregation);
 
+  congregation.$inject = ['$firebaseArray'];
   /* @ngInject */
   function congregation($firebaseArray) {
     var service = {

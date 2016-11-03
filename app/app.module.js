@@ -5,8 +5,8 @@
     'ngRoute',
     'firebase',
     'ngMaterial',
-    'core.congregation',
-    'app.congregation-list',
-    'app.congregation-details'
+    'app.core',
+    'app.layout',
+    'app.congregation-list'
   ]);
 })();
