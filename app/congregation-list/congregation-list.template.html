@@ -1,0 +1,15 @@
+<h1> congregations </h1>
+<div class="col-md-10">
+      <!--Body content-->
+  <ul class="congregations">
+    <li ng-repeat="congregation in vm.congregations | filter:vm.query | orderBy:vm.orderProp"
+        class="thumbnail congregation-list-item">
+      <a href="#!/congregation/{{congregation.$id}}" class="thumb">
+        <img ng-src="{{congregation.icon}}" alt="{{congregation.displayName}}" />
+      </a>
+      <a href="#!/congregation/{{congregation.$id}}">{{congregation.displayName}}</a>
+      <p>{{congregation.shortName}}</p>
+    </li>
+  </ul>
+
+</div>
