@@ -1,6 +1,7 @@
 <!doctype html>
 <html ng-app="app">
   <head>
+    <link rel="stylesheet" href="app/app.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
@@ -28,27 +29,16 @@
     <script src="app/core/config.js"></script>
     <script src="app/core/api/congregation.js"></script>
     <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/theme/theme.module.js"></script>
+
+    <script src="app/home/home.module.js"></script>
+    <script src="app/home/home.controller.js"></script>
 
     <script src="app/congregation-list/congregation-list.module.js"></script>
     <script src="app/congregation-list/congregation-list.controller.js"></script>
 
   </head>
   <body>
-
-
-
-    <div layout="row">
-      <md-sidenav md-component-id="left" class="md-sidenav-left">
-        Left Nav!
-      </md-sidenav>
-
-      <md-content>
-        <div ng-view></div>
-
-      </md-content>
-    </div>
-
-
-
+    <div ng-view></div>
   </body>
 </html>

@@ -7,6 +7,8 @@
     'ngMaterial',
     'app.core',
     'app.layout',
+    'app.home',
+    'app.layout.theme',
     'app.congregation-list'
   ]);
 })();

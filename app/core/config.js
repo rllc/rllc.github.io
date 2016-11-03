@@ -14,12 +14,17 @@
     $locationProvider.hashPrefix('!');
 
     $routeProvider.
+      when('/', {
+        templateUrl: 'app/home/home.template.html',
+        controller: 'HomeController',
+        controllerAs: 'vm'
+      }).
       when('/congregations', {
         templateUrl: 'app/congregation-list/congregation-list.template.html',
         controller: 'CongregationListController',
         controllerAs: 'vm'
       }).
-      otherwise('/congregations');
+      otherwise('/');
 
   }
 })();
